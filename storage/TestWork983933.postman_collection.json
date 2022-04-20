@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "fbfc9811-4edd-4d0c-8f70-ea7a0fb2e490",
+		"name": "TestWork983933",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authors",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Publishers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "p1SZS3TGSD0pN1BkxarhhR1aHDHIe3W8PZOlhSu8DbBRzdaoB82HrMgQjAB9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/api/publishers/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"publishers",
+						"1"
+					],
+					"query": [
+						{
+							"key": "sort_by",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "sort_order",
+							"value": "asc",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "books:deserunt",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "B3g52EEO29Gp7B3XOl3F5TEv6JKz6EkWNsRMvhPOVnDKNV0KYHEiPIAkCDCQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
