@@ -108,4 +108,6 @@ return [
 
     'password_timeout' => 10800,
 
+    'bearer' => env('BEARER'),
+
 ];
